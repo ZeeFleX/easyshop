@@ -13,5 +13,6 @@ module.exports = {
       pages: { type: Relationship, ref: "Page.contents", many: true },
       createdAt: { type: DateTime, schemaDoc: "Дата и время публикации"}
     },
+    labelResolver: content => content.blockId
   },
 };

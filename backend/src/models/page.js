@@ -10,5 +10,6 @@ module.exports = {
       url: { type: Text, schemaDoc: "URL страницы" },
       contents: { type: Relationship, ref: "Content.pages", many: true },
     },
+    labelResolver: page => page.title
   },
 };
